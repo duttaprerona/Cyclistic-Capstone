@@ -54,6 +54,7 @@ The 'Process' step has been conducted to :
 
 This step helps ensure the data is clean and free from outliers before moving ahead with further analysis. Python (Jupyter Notebook) has been used as the main tool for processing and analysing the data.
 ### **3.1 Code**
+
 **Collecting Data**
 # Importing all necessary libraries
 import numpy as np
@@ -155,7 +156,6 @@ df['ride_length'] = pd.Series(diff_list)
 df['ride_length_in_s'] = pd.Series(diff_in_s_list)
 ```
 # Creating a column for month
-```
 df['month'] = df['date'].dt.month_name()
 ```
 # Removing the columns for start and end station id
